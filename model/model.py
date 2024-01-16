@@ -6,7 +6,7 @@ from sklearn.preprocessing import PolynomialFeatures, StandardScaler
 from sklearn.metrics import mean_squared_error, r2_score
 
 
-# 二次多项式回归模型
+# 三次多项式回归模型
 def polynomial_regression_model(X_train, X_test, y_train, y_test):
     poly_reg = PolynomialFeatures(degree=3)
     poly_X_train = poly_reg.fit_transform(X_train)
